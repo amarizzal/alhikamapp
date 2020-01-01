@@ -49,7 +49,7 @@
                 /* background-attachment: ; */
             }
             .title_login {
-                padding: 10px;
+                padding: 5px;
             }
             .title_login h1 {
                 font-weight: bold;
@@ -57,9 +57,17 @@
                 line-height: 59px;
                 text-align: center;
             }
+            .title_login img {
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+            }
             .login-box {
-                border: 1px solid #d2d6de;
-                margin: 2% auto;
+                /*border: 1px solid #d2d6de;*/
+                margin: 0% auto;
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px #888888;
             }
 
             .btn-primary {
@@ -84,25 +92,13 @@
 
     <body>
         <div class="container">
-            <div class="row" style="margin-top: 10%">
+            <div class="row" style="margin-top: 6%">
                 <div class="col-md-6 col-xs-12"></div>
                 <div class="col-md-6 col-xs-12 login">
                     <div class="title_login">
-                        <h1>
-                            Pondok Pesantren <br />
-                            Al-Hikam Malang
-                        </h1>
+                            <img src="https://res.cloudinary.com/dbrgl4f37/image/upload/v1577837472/alhikam.png" alt="">
                     </div>
                     <div class="login-box">
-                        {{--
-                        <div class="login-logo">
-                            <a href="{{ url('/home') }}"
-                                ><b>Pondok Pesantren Al-Hikam</b></a
-                            >
-                        </div>
-                        --}}
-
-                        <!-- /.login-logo -->
                         <div class="login-box-body">
 
                             @if($errors->any()) @foreach ($errors->all() as
