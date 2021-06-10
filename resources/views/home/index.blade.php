@@ -8,12 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Muara Cita</title>
   </head>
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" style="background-color: #0099ff;">
         <div class="container nav">
-            <a class="navbar-brand" style="color: blue;" href="#">
+            <a class="navbar-brand" style="color: #007fd8;" href="#">
                 <img src="assets/logo-ospam.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
                 Muara Cita
             </a>
@@ -33,6 +36,23 @@
             </ul>
         </div>
     </nav>
+
+    <section class="jumbotron">
+        <div class="jumbotron-wrapper" style="background-color: #0099ff;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="jumbotron-title">OSPAM Muara Cita</h1>
+                        <p class="jumbotron-text">Sinergi Bersama Santri</p>
+                    </div>
+                    <div class="col">
+                        <img src="https://res.cloudinary.com/dklmpixki/image/upload/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png" alt="" width=200>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,224C480,256,600,256,720,245.3C840,235,960,213,1080,176C1200,139,1320,85,1380,58.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

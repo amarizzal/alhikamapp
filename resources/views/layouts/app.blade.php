@@ -35,8 +35,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <img style="width:61px;" src="https://res.cloudinary.com/dklmpixki/image/upload/c_mpad,h_1457,w_1457/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png" class="img-circle"
-                     alt="User Image"/>
+                <b>Al-Hikam App</b>
             </a>
 
             <!-- Header Navbar -->

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 0 !important; 
+}
+
+.jumbotron {
+    font-family: Raleway;
+}
+
+.jumbotron-title {
+    font-size: 5rem;
+    color: #000B76;
+}
+
+.jumbotron-text {
+    font-size: 2rem;
+    color: white;
+}
