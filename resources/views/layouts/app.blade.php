@@ -35,7 +35,8 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>Al-Hikam App</b>
+                <img style="width:61px;" src="https://res.cloudinary.com/dklmpixki/image/upload/c_mpad,h_1457,w_1457/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png" class="img-circle"
+                     alt="User Image"/>
             </a>
 
             <!-- Header Navbar -->
@@ -51,16 +52,16 @@
                         <li class="dropdown user user-menu">
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <!-- The user image in the navbar-->
-                                <img src="https://adminlte.io/themes/AdminLTE/dist/img/user1-128x128.jpg"
-                                     class="user-image" alt="User Image"/>
+                                <!-- The user image in the navbar
+                                <img src="https://res.cloudinary.com/dklmpixki/image/upload/c_mpad,h_1457,w_1457/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png"
+                                     class="user-image" alt="User Image"/> -->
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::guard('admins')->user()->username !!}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="https://adminlte.io/themes/AdminLTE/dist/img/user1-128x128.jpg"
+                                    <img src="https://res.cloudinary.com/dklmpixki/image/upload/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::guard('admins')->user()->username !!}
@@ -95,7 +96,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright © 2021 <a href="#">Medkominfo - Ospam Muara Cita</a>.</strong>
         </footer>
 
     </div>

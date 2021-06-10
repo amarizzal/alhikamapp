@@ -6,7 +6,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="https://adminlte.io/themes/AdminLTE/dist/img/user1-128x128.jpg" class="img-circle"
+                <img src="https://res.cloudinary.com/dklmpixki/image/upload/c_mpad,h_1457,w_1457/v1623169542/Logo_OSPAM_Muara_Cita_1_tcylmb.png" class="img-circle"
                      alt="User Image"/>
             </div>
             <div class="pull-left info">

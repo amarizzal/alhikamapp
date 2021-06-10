@@ -16,6 +16,8 @@ Route::get('/', "AuthController@index")->name('admin.login');
 Route::post('/', 'AuthController@login');
 Route::post('/logout', 'AuthController@logout')->name('admin.logout');
 
+Route::get('/aboutus', 'HomeController@index');
+
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::resource('santris', 'SantriController');
     Route::post('santris/upload', 'SantriController@uploadExcel')->name('santri.upload');

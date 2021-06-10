@@ -19,7 +19,7 @@ class CreatePresensisTable extends Migration
             $table->date('tanggal');
             $table->string('masuk', 30)->nullable();
             $table->string('keluar', 30)->nullable();
-            $table->boolean('izin');s
+            $table->boolean('izin');
             $table->string('keterangan', 100);
             $table->timestamps();
             $table->softDeletes();
