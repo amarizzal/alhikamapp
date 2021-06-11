@@ -26,16 +26,16 @@
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#jumbotron">Logo</a>
+                    <a id="logo" class="nav-link active" aria-current="page" href="#jumbotron">Logo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#visimisi">Visi Misi</a>
+                    <a id="visi" class="nav-link" href="#visimisi">Visi Misi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Anggota</a>
+                    <a id="anggota" class="nav-link" href="#">Anggota</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">App</a>
+                    <a id="app" class="nav-link" href="#">App</a>
                 </li>
             </ul>
             <button class="btn btn-dark" type="submit">Search</button>
@@ -44,9 +44,9 @@
 
     <!-- ============================ JUMBOTRON ============================== -->
     <section class="jumbotron" id="jumbotron">
-        <div class="jumbotron-wrapper pt-5" style="background-color: #0099ff;">
+        <div class="jumbotron-wrapper pt-5" style="background-color: #0099ff; padding-bottom: -1px;">
             <div class="container">
-                <div class="row align-items-center justify-content-center py-5">
+                <div class="row align-items-center justify-content-center pt-5">
                     <div class="col">
                         <!-- <h1 class="jumbotron-title">OSPAM</h1> -->
                         <h1 class="title">Muara Cita</h1>
@@ -67,17 +67,30 @@
         <!-- =========================== VISI MISI ============================= -->
         <section class="visimisi container" id="visimisi">
             <h1 class="title text-center">Kemana kita Bergerak?</h1>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col">
                     <img src="assets/logo-only-ospam.png" alt="" height=400 class="m-auto">
                 </div>
                 <div class="col">
-                    <h3 class="title-sec">Visi</h3>
-                    <p class="visimisi-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, doloribus?</p>
-                    <h3 class="title-sec">Misi</h3>
-                    <p class="visimisi-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, doloribus?</p>
+                    <div class="visimisi-wrapper my-5">
+                        <h3 class="title-sec">Visi</h3>
+                        <p class="text">Terciptanya sinergitas dalam pembentukan karakter santri mahasiswa yang religius, cendekia, dan mandiri dengan berlandaskan ruhul ma'had</p>
+                    </div>
+                    <div class="visimisi-wrapper my-5">
+                        <h3 class="title-sec">Misi</h3>
+                        <ul class="text">
+                            <li>Menumbuhkankembangkan sikap kebersamaan, sosial, dan tanggung jawab dalam pesantren</li>
+                            <li>Meningkatkan partisipasi santri dalam kegiatan keilmiahan</li>
+                            <li>Membudayakan nilai-nilai religius dalam lingkungan pesantren</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- ========================= ANGGOTA =============================== -->
+        <section class="anggota">
+            <h1 class="title">Anggota</h1>
         </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -92,17 +105,49 @@
 
     <!-- ============================ OWN JAVASCRIPT ========================= -->
     <script>
+        const navbar = document.querySelector(".navbar");
+        const jumbotron = document.querySelector(".jumbotron").offsetTop;
+        const visimisi = document.querySelector(".visimisi").offsetTop;
+        const anggota = document.querySelector(".anggota").offsetTop;
+        // const logo = document.querySelector(".logo").scrollTop;
+        
+        // ======= Item navbar
+        const logo = document.querySelector("#logo");
+        const visi = document.querySelector("#visi");
+        const ang = document.querySelector("#anggota");
+
         document.addEventListener('scroll', function(e) {
-            lastKnownScrollPosition = window.scrollY;
-            console.log(lastKnownScrollPosition);
-            const navbar = document.querySelector(".navbar");
+            let lastKnownScrollPosition = window.scrollY;
+            
+            // ===== Interactive Navbar
+            lastKnownScrollPosition += 300;
+            console.log(lastKnownScrollPosition, visimisi);
             if (lastKnownScrollPosition > 450) {
                 navbar.style.backgroundColor = "#0099ff";
             } else {
                 navbar.style.backgroundColor = "transparent";
-
             }
+
+            // ===== Interactive item Navbar
+            if (lastKnownScrollPosition > anggota) {
+                resetClass();
+                ang.classList.add("active");
+            } else if (lastKnownScrollPosition > visimisi) {
+                resetClass();
+                visi.classList.add("active");
+            } else if (lastKnownScrollPosition > jumbotron) {
+                // alert("tes");
+                resetClass();
+                logo.classList.add("active");
+            } 
+
         });
+
+        const resetClass = () => {
+            logo.classList.remove("active");
+            visi.classList.remove("active");
+            ang.classList.remove("active");
+        }
     </script>
   </body>
 </html>
