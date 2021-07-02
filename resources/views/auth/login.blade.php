@@ -96,7 +96,7 @@
                 <div class="col-md-6 col-xs-12"></div>
                 <div class="col-md-6 col-xs-12 login">
                     <div class="title_login">
-                            <img src="https://res.cloudinary.com/dbrgl4f37/image/upload/v1577837472/alhikam.png" alt="">
+                            <img src="assets/logo-ospam.png" alt="">
                     </div>
                     <div class="login-box">
                         <div class="login-box-body">

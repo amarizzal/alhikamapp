@@ -35,7 +35,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>Al-Hikam App</b>
+                <b>OSPAM App</b>
             </a>
 
             <!-- Header Navbar -->

@@ -10,13 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'HomeController@index');
 
 // auth login admin
-Route::get('/', "AuthController@index")->name('admin.login');
-Route::post('/', 'AuthController@login');
+Route::get('/login', "AuthController@index")->name('admin.login');
+Route::post('/login', 'AuthController@login');
 Route::post('/logout', 'AuthController@logout')->name('admin.logout');
 
-Route::get('/aboutus', 'HomeController@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::resource('santris', 'SantriController');
